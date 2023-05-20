@@ -38,7 +38,7 @@
         let char = arr[i]
         for(let j = 0; j < chars.length; j++){
           if (chars[j] === char){
-            output += chars[j+1]
+            output += chars[(j + 1) % 26]
           }
         }
       }

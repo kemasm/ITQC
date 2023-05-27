@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="input">
+  <button id="encrypt" onclick="encrypt()">Encrypt</button>
+  <p id="output"></p>
+
+  <script>
+    function encrypt() {
+      let input = document.getElementById('input').value.toLowerCase()
+      let output = ''
+      let output2 = ''
+
+      //tambahkan kode dibawah comment ini
+
+      for (let i = 0; i < input.length; i++){
+        let hrf = input[i]
+        let chr = hrf.charCodeAt() - 96
+        output += chr + " "
+        console.log(output);
+      }
+      
+      //tambahkan kode diatas comment ini
+
+      document.getElementById('output').innerHTML = output
+    }
+  </script>
+</body>
+</html> 

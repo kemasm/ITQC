@@ -12,11 +12,81 @@
   <p id="output"></p>
 
   <script>
-    let output = ''
-    for (let i = 0; i < 10; i++) {
-      output += '* '
-      console.log(output);      
+    // OUTPUT 3
+    // let stars = ["*", "*", "*", "*", "*"]
+    // let spaces = []
+    // for(let i = 0; i < 5; i++){ 
+    //   let output = spaces.concat(stars).join(" ")
+    //   console.log(output);
+    //   stars.pop()
+    //   spaces.push(" ")
+    // }
+
+    // OUTPUT 4
+    // let stars = ["*"]
+    // let spaces = [" ", " ", " ", " "]
+    // for(let i = 0; i < 5; i++){
+    //   let output = spaces.concat(stars)
+    //   output = output.join(" ")
+    //   console.log(output)
+    //   stars.push("*")
+    //   spaces.pop()
+    // }
+
+    // OUTPUT 5
+    // let stars = ["*", "*", "*", "*", "*", "*", "*", "*"]
+    // let spaces = []
+    // for(let i=0; i < 8; i++){         
+    //   let output = stars.join(" ")    
+    //   let output2 = spaces.join("")   
+    //   console.log(output2 + output);  
+    //   stars.pop()                     
+    //   spaces.push(" ")               
+    // }
+
+    // OUTPUT 6
+    // let stars = ["*"]
+    // let spaces = [" ", " ", " ", " ", " ", " ", " "]
+    // for(let i = 0; i < 8; i++){
+    //   let output = stars.join(" ")
+    //   let output2 = spaces.join("")
+    //   console.log(output2 + output);
+    //   stars.push("*")
+    //   spaces.pop()
+    // }
+
+    // OUTPUT 7
+    // console.log("* * * * * * * * *")
+    // let stars = ["*", "*", "*", "*"]
+    // let spaces = [" "]
+    // let spaces2 = []
+    // for (let i = 0; i < 4; i++){
+    //   let output = stars.concat(spaces)
+    //   let output2 = spaces2.concat(stars)
+    //   let output3 = output.concat(output2)
+    //   output3 = output3.join(" ")
+    //   console.log(output3);
+    //   stars.pop()
+    //   spaces.push(" ")
+    //   spaces2.push(" ")
+    // }
+
+    // OUTPUT 8
+    let stars = ["*"]
+    let spaces = [" ", " ", " ", " "]
+    let space2 = [" ", " ", " "]
+    for (let i = 0; i < 4; i++){
+      let output = stars.concat(spaces).concat(space2).concat(stars)
+      output = output.join(" ")
+      console.log(output);
+      stars.push("*")
+      spaces.pop()
+      space2.pop()
     }
+
+    console.log("* * * * * * * * *");
+
+
   </script>
 </body>
 </html> 

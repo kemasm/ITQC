@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1
+    // let series = []               // series = [1, 2, 3, 4...7]
+    // for(let i = 0; i < 7; i++){   // i = 3
+    //   series.push(i + 1)          // push 4
+    // }
+
+    // let output = series.join(" ") // [1, 2, 3... 7] -> "1 2 3 4...7"
+    // console.log(output);
+
+    // 2
+    // let series = []                   // [1, 3, 5, 7, 9]
+    // for (let i = 1; i < 11; i+=2) {   // i = 5
+    //   series.push(i)                  // push 5
+    // }
+
+    // let output = series.join(" ")
+    // console.log(output);
+
+    // 3
+    // let series = []                     // [0, 2, 4, 6, 8 , 10]
+    // for (let i = 0; i < 12; i+= 2) {    // i = 0 + 2 = 2 + 2 = 4
+    //   series.push(i)                    // push 4
+    // }
+
+    // let output = series.join(" ")
+    // console.log(output);
+
+    // 4
+    // let temp;                   // temp   = 2
+    // let series = []             // series = [1, 1, 2, 3.....21]
+    // let j = 1                   // j      = 5
+    // for (let i = 1; i <= 21;){  // i      = 3
+    //   series.push(i)            // push 3
+    //   temp = i
+    //   i = j
+    //   j += temp
+    // }
+    // let output = series.join(" ")
+    // console.log(output);
+
+    // 5 cara 1
+    let series = []
+    for(let i = 1; i <= 7; i++){
+      series.push(2 ** i)
+    }
+
+    let output = series.join(" ")
+    console.log(output);
+
+    // 5 cara 2
+    let series2 = []
+    for(let i = 2; i <= 128; i*=2){
+      series2.push(i)
+    }
+
+    let output2 = series.join(" ")
+    console.log(output2);
+  </script>
+</body>
+</html> 

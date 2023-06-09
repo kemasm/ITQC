@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function sumArray(arr1){
+      // lengkapilah fungsi sumArray agar mengembalikan jumlah dari seluruh isi dari arr1
+      let sum = 0
+
+      for (let i = 0; i < arr1.length; i++){
+        sum += arr1[i]
+      }
+
+      return sum
+    }
+
+    // let array1 = [1, 2, 3, 4, 5, 6, 7]
+    // let total = sumArray(array1)
+    // console.log(total) // 28
+
+    function sumArrays(arr1, arr2) {
+      // lengkapilah fungsi sumArray agar mengembalikan array yang berisi jumlah dari masing-masing isi dari arr1 dan arr2
+
+      let sum = []
+
+      for(let i = 0; i < arr1.length; i++){
+        sum.push(arr1[i] + arr2[i])
+      }
+
+      return sum
+    }
+
+    // let array1 = [1, 2, 3, 4, 5, 6, 7]
+    // let array2 = [7, 6, 5, 4, 3, 2, 1]
+    // let arrayTotal = sumArrays(array1, array2)
+    // console.log(arrayTotal) // [8, 8, 8, 8, 8, 8, 8]
+
+    function diffArrays(arr1, arr2){
+      // lengkapilah fungsi diffArray agar mengembalikan array yang berisi selisih dari masing-masing isi dari arr1 dan arr2
+      let diff = []
+
+      for (let i = 0; i < arr1.length; i++){
+        diff.push(arr1[i] - arr2[i])
+      }
+
+      return diff
+    }
+
+    // let array1 = [1, 2, 3, 4, 5, 6, 7]
+    // let array2 = [7, 6, 5, 4, 3, 2, 1]
+    // let arrayDifference = diffArrays(array1, array2)
+    // console.log(arrayDifference) // [-6, -4, -2, 0, 2, 4, 6]
+
+    function factorial(num){
+      // lengkapilah fungsi factorial agar mengembalikan nilai kali dari angka 1 sampai num
+      let result = 1
+      
+      for (let i = 2; i <= num; i++){
+        result *= i
+      }
+
+      return result
+
+    }
+
+    // let input = 7
+    // let total = factorial(input)
+    // console.log(total) // 1 * 2 * 3 * 4 * 5 * 6 * 7 = 5040
+                                                     //  0 1 2 3 4 5 6
+    function findHighest(arr1){               // arr1 = [1,2,3,6,4,5,7]
+      let highest = 0;                        // highest = 7                  
+
+      for (let i = 0; i < arr1.length; i++){  // i = 7
+        if (arr1[i] > highest) {              // arr1[6] > highest -> 7 > 6 -> T 
+          highest = arr1[i]                   // highest = arr1[6] -> 7
+        }
+      }
+
+      return highest
+    }
+
+    let array1 = [1, 2, 3, 6, 10, 4, 5, 7]
+    let highest = findHighest(array1)
+    console.log(highest) // 7
+  </script>
+</body>
+</html> 
